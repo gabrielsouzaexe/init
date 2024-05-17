@@ -47,6 +47,7 @@ return require('packer').startup(function(use)
   use("nvim-treesitter/nvim-treesitter-context");
   use("nvim-lualine/lualine.nvim")
   use("nvim-tree/nvim-web-devicons")
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
