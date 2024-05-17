@@ -1,5 +1,11 @@
 require("gsouza.set")
 require("gsouza.remap")
+require("lualine").setup {
+    options = {
+        theme = 'gruvbox'
+    }
+}
+
 
 local augroup = vim.api.nvim_create_augroup
 local gsouzaGroup = augroup('gsouza', {})
