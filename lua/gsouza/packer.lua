@@ -48,6 +48,8 @@ return require('packer').startup(function(use)
   use("nvim-lualine/lualine.nvim")
   use("nvim-tree/nvim-web-devicons")
   use { "catppuccin/nvim", as = "catppuccin" }
+  use({ "elixir-tools/elixir-tools.nvim", tag = "stable", requires = { "nvim-lua/plenary.nvim" }})
+
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -76,6 +78,13 @@ return require('packer').startup(function(use)
   use("github/copilot.vim")
   use("eandrju/cellular-automaton.nvim")
   use("laytan/cloak.nvim")
+
+  use {
+      'numToStr/Comment.nvim',
+      config = function()
+          require('Comment').setup()
+      end
+  }
 
 end)
 

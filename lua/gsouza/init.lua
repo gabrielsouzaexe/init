@@ -5,6 +5,7 @@ require("lualine").setup {
         theme = 'gruvbox'
     }
 }
+require('Comment').setup()
 
 
 local augroup = vim.api.nvim_create_augroup
