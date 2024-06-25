@@ -79,6 +79,16 @@ return require('packer').startup(function(use)
   use("eandrju/cellular-automaton.nvim")
   use("laytan/cloak.nvim")
 
+  use({
+      'sainnhe/gruvbox-material',
+      lazy = false,
+      priority = 1000,
+      config = function()
+          vim.g.gruvbox_material_enable_italic = true
+          vim.cmd.colorscheme('gruvbox-material')
+      end
+  })
+
   use {
       'numToStr/Comment.nvim',
       config = function()

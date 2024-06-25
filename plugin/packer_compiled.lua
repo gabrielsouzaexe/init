@@ -140,6 +140,12 @@ _G.packer_plugins = {
     path = "/home/gsouza/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["gruvbox-material"] = {
+    config = { "\27LJ\2\2u\0\0\2\0\6\0\n6\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\3\0009\0\4\0'\1\5\0B\0\2\1K\0\1\0\21gruvbox-material\16colorscheme\bcmd#gruvbox_material_enable_italic\6g\bvim\0" },
+    loaded = true,
+    path = "/home/gsouza/.local/share/nvim/site/pack/packer/start/gruvbox-material",
+    url = "https://github.com/sainnhe/gruvbox-material"
+  },
   harpoon = {
     loaded = true,
     path = "/home/gsouza/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -245,6 +251,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: gruvbox-material
+time([[Config for gruvbox-material]], true)
+try_loadstring("\27LJ\2\2u\0\0\2\0\6\0\n6\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\3\0009\0\4\0'\1\5\0B\0\2\1K\0\1\0\21gruvbox-material\16colorscheme\bcmd#gruvbox_material_enable_italic\6g\bvim\0", "config", "gruvbox-material")
+time([[Config for gruvbox-material]], false)
 -- Config for: trouble.nvim
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\2\2C\0\0\2\0\4\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\1K\0\1\0\1\0\1\nicons\1\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
